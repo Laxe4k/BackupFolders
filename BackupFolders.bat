@@ -69,7 +69,8 @@ echo 1 - Perform a backup
 echo 2 - Change the backup folder
 echo 3 - Change the compression level
 echo 4 - Add folders to backup
-echo 5 - Quit
+echo 5 - Clear the list of folders to backup
+echo 6 - Quit
 echo.
 echo ----------------------------------------------
 set /p choix=Your choice: 
@@ -77,7 +78,8 @@ if %choix%==1 goto :backup
 if %choix%==2 goto :changeBackupDir
 if %choix%==3 goto :setCompression
 if %choix%==4 goto :addFolders
-if %choix%==5 goto :exit
+if %choix%==5 goto :clearFolders
+if %choix%==6 goto :exit
 goto :menu
 
 :addFolders
@@ -196,6 +198,16 @@ if not exist "%ProgramFiles%\7-Zip\7z.exe" (
     exit
 )
 goto :start
+
+:clearFolders
+cls
+color 0e
+echo Clearing the list of folders to backup...
+echo.
+del Folders.txt
+echo The list of folders to backup has been cleared.
+timeout 3
+goto :menu
 
 :exit
 cls
