@@ -35,7 +35,10 @@ This batch script allows you to back up specified folders by compressing them in
 7. **Changing the Backup Folder**:
    - Allows the user to specify a new path for the backup folder.
 
-8. **Changing the Compression Level**:
+8. **Clearing Folders**:
+   - Clears the list of folders to be backed up.
+
+9. **Changing the Compression Level**:
    - Allows the user to choose the compression level for 7-Zip.
 
 ## Usage
