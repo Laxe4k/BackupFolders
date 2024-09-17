@@ -21,7 +21,7 @@ This batch script allows you to back up specified folders by compressing them in
    - Verifies if 7-Zip is installed and installs it via winget if necessary.
 
 4. **Main Menu**:
-   - Displays a menu with options to perform a backup, change the backup folder, change the compression level, add folders to be backed up, or quit.
+   - Displays a menu with options to perform a backup, change the backup folder, change the compression level, add folders to be backed up, clear folders, and exit.
 
 5. **Adding Folders**:
    - Allows the user to add folder paths to be backed up into a text file (Folders.txt).
